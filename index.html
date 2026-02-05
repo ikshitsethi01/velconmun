@@ -129,6 +129,150 @@
   }
 }
 
+/* Base reset and globals */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Page wrapper */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem 0;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+/* Cards not using Bootstrap card */
+.custom-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Forms outside Bootstrap */
+.custom-form label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.custom-form input,
+.custom-form textarea,
+.custom-form select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+}
+
+.custom-form input:focus,
+.custom-form textarea:focus,
+.custom-form select:focus {
+  outline: none;
+  border-color: #80bdff;
+}
+
+/* Buttons outside Bootstrap */
+.custom-btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Utilities */
+.text-muted-small {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.shadow-soft {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 h4{
 font-weight: bold;
