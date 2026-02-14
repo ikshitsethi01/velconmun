@@ -494,6 +494,77 @@ body {
     }
 }
 
+
+.team-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.team-card {
+  flex-shrink: 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 380px; 
+}
+
+.team-card img {
+  height: 280px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.team-card img:hover {
+  transform: scale(1.05);
+}
+
+.team-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.team-card p {
+  color: #666;
+  margin-top: 5px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.team-carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1024px) {
+  .team-card { width: 33.33%; }
+}
+
+@media (max-width: 768px) {
+  .team-card { width: 50%; }
+}
+
+@media (max-width: 480px) {
+  .team-card { width: 100%; }
+}
+.team-card p {
+  display: none;
+}
+
+
 </style>
 </head>
 
@@ -529,6 +600,9 @@ body {
 
 
 <section class="team-section">
+  <div class="team-carousel">
+  <div class="carousel-track" id="carouselTrack"></div>
+</div>
 
     <div class="featured-team">
 
@@ -554,6 +628,69 @@ body {
     <div class="team-grid" id="teamContainer"></div>
 
 </section>
+
+<script>
+const teamMembers = [
+  { name: "Aarush Gautam", image: "team/46a39bbe-9d2d-4882-8501-4c450857ece0 - Aarush Gautam.jpeg" },
+  { name: "Manaal", image: "team/2898A61E-41DC-4FB9-A40A-3F20D218F884 - Manaal -.jpg" },
+  { name: "Maanya Hasija", image: "team/a - Maanya Hasija.jpeg" },
+  { name: "Garima Roy", image: "team/Garima.jpeg" },
+  { name: "Saheb Singh Dhir", image: "team/Saheb.jpeg" },
+  { name: "Parth Luthra", image: "team/Parth.jpg" },
+  { name: "Raghav Sharma", image: "team/IMG_20250802_121449_694 - Raghav Sharma.webp" },
+  { name: "Anzar", image: "team/IMG_20251213_175722 - Anzar.jpg" },
+  { name: "Khushi Goyal", image: "team/IMG_20260214_154050_415 - Khushi Goyal.jpg" },
+  { name: "Anshika Agrawal", image: "team/IMG-20251024-WA0026 - Anshika Agrawal.jpg" },
+  { name: "Pratibha Rai", image: "team/IMG-20260124-WA0052 - Pratibha Rai.jpg" },
+  { name: "Hanish Muthreja", image: "team/Hanish.jpg" },
+  { name: "Varun Mangla", image: "team/Myra Mangla photo for MUN - Varun Mangla (Aditya Mangla).jpg" },
+  { name: "Abhilakshya Kumar", image: "team/Abhilakshya.jpg" },
+  { name: "Priyanshi Singh", image: "team/Priyanshi Singh.jpeg" },
+  { name: "Shreyas Singh", image: "team/Screenshot_2026-02-13-13-03-27-42_7352322957d4404136654ef4adb64504 - Shreyas Singh.jpg" },
+  { name: "Shambhavi Tiwari", image: "team/Shambhavi.jpg" },
+  { name: "Indrani Biswal", image: "team/Indrani.jpg" },
+  { name: "Vaishnavi Bansal", image: "team/Vaishnavi.jpg" },
+  { name: "Mahima Verma", image: "team/Snapchat-667918500 - Mahima Verma.jpg" },
+  { name: "Ruhani", image: "team/Snapchat-908659028 - Ruhani.jpg" },
+  { name: "Bhumi Aggarwal", image: "team/Snapchat-1461440044 - Bhumi Aggarwal.jpg" },
+  { name: "Kavya Rai", image: "team/Snapchat-1689489129 - Pratibha Rai.jpg" },
+  { name: "Vrisha", image: "team/WhatsApp Image 2026-02-13 at 2.37.40 PM - vrisha.jpeg" },
+  { name: "Ashvita Desai", image: "team/WhatsApp Image 2026-02-13 at 5.27.51 PM - Alok Desai.jpeg" },
+  { name: "Kavya", image: "team/WhatsApp Image 2026-02-13 at 11.12.20 PM.jpeg" }
+  { name: "Aviral Mishra", image: "team/Aviral.jpeg" },
+  { name: "Advik Jhamb", image: "team/Advik.jpeg" },
+  { name: "Sia Bhotika", image: "team/Sia.jpg" },
+  { name: "Nidhi", image: "team/Nidhi.jpg" },
+  { name: "Anshul Goel", image: "team/Anshul.jpg" },
+  { name: "Jaithra Pratap", image: "team/Jaithra.jpg" }
+];
+
+
+  const track = document.getElementById("carouselTrack");
+
+  function createCard(member) {
+    const card = document.createElement("div");
+    card.className = "team-card";
+    card.innerHTML = `
+      <img src="${member.image}" alt="${member.name}">
+      <h3>${member.name}</h3>
+    `;
+    return card;
+  }
+
+  function loadCarousel() {
+    teamMembers.forEach(member => {
+      track.appendChild(createCard(member));
+    });
+
+    // Duplicate for infinite loop
+    teamMembers.forEach(member => {
+      track.appendChild(createCard(member));
+    });
+  }
+
+  loadCarousel();
+</script>
 
 <script>
 
@@ -591,3 +728,4 @@ teamMembers.forEach(member => {
 
 </body>
 </html>
+
