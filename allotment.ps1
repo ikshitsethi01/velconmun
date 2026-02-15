@@ -5,7 +5,7 @@
 $smtpServer = "smtp.gmail.com"
 $smtpPort = 587
 $username = "velconmun@gmail.com"
-$password = $env:EMAIL_PASS
+$password = $env:GMAILKEY
 $from = "Velcon MUN <info@velconmun.in>"
 
 
