@@ -1,4 +1,4 @@
-# ==============================
+<# # ==============================
 # Gmail SMTP Configuration
 # ==============================
 
@@ -487,4 +487,4 @@ Send-MailMessage `
     -UseSsl `
     -Credential $credential
 
-Write-Host "Email sent successfully."
+Write-Host "Email sent successfully." #>
