@@ -2,12 +2,13 @@
 
 $secret = "24053108VELCONADVIKJHAMBSMALLHEIGHT";
 
-if ($_POST["key"] !== $secret) {
+$key = $_POST["key"] ?? $_GET["key"] ?? null;
+$committeeCode = $_POST["committeeCode"] ?? $_GET["committeeCode"] ?? null;
+
+if ($key !== $secret) {
     http_response_code(401);
     exit("Unauthorized");
 }
-
-$committeeCode = $_POST["committeeCode"];
 
 if (!$committeeCode) {
     exit("No committee code");
