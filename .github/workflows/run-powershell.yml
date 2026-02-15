@@ -17,4 +17,4 @@ jobs:
         env:
           GMAILKEY: ${{ secrets.GMAILKEY }}
         run: |
-          ./script.ps1
+          ./allotment.ps1
