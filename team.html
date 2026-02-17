@@ -8,7 +8,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="https://velconmun.in/velconsq.jpg" rel="icon" type="image/x-icon">
+  <link href="https://velconmun.in/velconmun.png" rel="icon" type="image/x-icon">
   <link href="https://velconmun.in/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Main CSS File -->
   <link href="https://velconmun.in/assets/css/main.css" rel="stylesheet">
+  
 <style>  
 	
 	@media (max-width: 768px) {
@@ -504,7 +505,7 @@ body {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 35s linear infinite;
 }
 
 .team-card {
@@ -549,6 +550,17 @@ body {
   animation-play-state: paused;
 }
 
+@media (max-width: 1024px) {
+  .team-card { width: 33.33%; }
+}
+
+@media (max-width: 768px) {
+  .team-card { width: 50%; }
+}
+
+@media (max-width: 480px) {
+  .team-card { width: 100%; }
+}
 .team-card p {
   display: none;
 }
@@ -593,7 +605,7 @@ body {
   <div class="carousel-track" id="carouselTrack"></div>
 </div>
 
-    <!--<div class="featured-team">
+    <div class="featured-team">
 
         <div class="team-card">
             <div class="image-box">AJ</div>
@@ -609,14 +621,14 @@ body {
                 <h3>Ikshit Sethi</h3>
                 <p>Chief Advisor</p>
             </div>
-        </div> 
+        </div>
 
     </div>
 
 
-    <div class="team-grid" id="teamContainer"></div>-->
+    <div class="team-grid" id="teamContainer"></div>
 
-</section> 
+</section>
 
 <script>
 const teamMembers = [
@@ -630,8 +642,9 @@ const teamMembers = [
   { name: "Anzar", image: "team/IMG_20251213_175722 - Anzar.jpg" },
   { name: "Khushi Goyal", image: "team/IMG_20260214_154050_415 - Khushi Goyal.jpg" },
   { name: "Anshika Agrawal", image: "team/IMG-20251024-WA0026 - Anshika Agrawal.jpg" },
-  { name: "Mrinal Muthreja", image: "team/Hanish.jpg" },
-  { name: "Myra Mangla", image: "team/Myra Mangla photo for MUN - Varun Mangla (Aditya Mangla).jpg" },
+  { name: "Pratibha Rai", image: "team/IMG-20260124-WA0052 - Pratibha Rai.jpg" },
+  { name: "Hanish Muthreja", image: "team/Hanish.jpg" },
+  { name: "Varun Mangla", image: "team/Myra Mangla photo for MUN - Varun Mangla (Aditya Mangla).jpg" },
   { name: "Abhilakshya Kumar", image: "team/Abhilakshya.jpg" },
   { name: "Priyanshi Singh", image: "team/Priyanshi Singh.jpeg" },
   { name: "Shreyas Singh", image: "team/Screenshot_2026-02-13-13-03-27-42_7352322957d4404136654ef4adb64504 - Shreyas Singh.jpg" },
@@ -641,7 +654,7 @@ const teamMembers = [
   { name: "Mahima Verma", image: "team/Snapchat-667918500 - Mahima Verma.jpg" },
   { name: "Ruhani", image: "team/Snapchat-908659028 - Ruhani.jpg" },
   { name: "Bhumi Aggarwal", image: "team/Snapchat-1461440044 - Bhumi Aggarwal.jpg" },
-  { name: "Kavya Ray", image: "team/Snapchat-1689489129 - Pratibha Rai.jpg" },
+  { name: "Kavya Rai", image: "team/Snapchat-1689489129 - Pratibha Rai.jpg" },
   { name: "Vrisha", image: "team/WhatsApp Image 2026-02-13 at 2.37.40 PM - vrisha.jpeg" },
   { name: "Ashvita Desai", image: "team/WhatsApp Image 2026-02-13 at 5.27.51 PM - Alok Desai.jpeg" },
   { name: "Kavya", image: "team/WhatsApp Image 2026-02-13 at 11.12.20 PM.jpeg" },
@@ -649,8 +662,13 @@ const teamMembers = [
   { name: "Advik Jhamb", image: "team/Advik.jpeg" },
   { name: "Sia Bhotika", image: "team/Sia.jpg" },
   { name: "Nidhi", image: "team/Nidhi.jpg" },
-  { name: "Arshi Goyal", image: "team/Anshul.jpg" },
-  { name: "Jaithra Pratap", image: "team/Jaithra.jpg" }
+  { name: "Anshul Goel", image: "team/Anshul.jpg" },
+  { name: "Jaithra Pratap", image: "team/Jaithra.jpg" },
+  { name: "Vamika Sharma", image: "team/VamikaSharma.jpg" },
+  { name: "Saanvi Pant", image: "team/SaanviPant.jpg" },
+  { name: "Hedya Kathuria", image: "team/HedyaKathuria.jpg" },
+  { name: "Aradhya Kaushik", image: "team/AradhyaKaushik.jpeg" },
+  { name: "Akshita Singh", image: "team/AkshitaSingh.jpg" },
 ];
 
 
