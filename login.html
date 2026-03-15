@@ -1,0 +1,200 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Login | Velcon MUN 2026</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+		<style>
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				background: linear-gradient(135deg, #0f1115, #161a22);
+				font-family: system-ui;
+				color: white;
+			}
+
+			.login-card {
+				width: 100%;
+				max-width: 420px;
+				padding: 45px;
+				background: #171a21;
+				border-radius: 14px;
+				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+				text-align: center;
+			}
+
+			.logo {
+				width: 140px;
+				margin-bottom: 9px;
+			}
+
+			.title-main {
+				font-size: 1.7rem;
+				font-weight: 600;
+				margin-bottom: 2px;
+			}
+
+			.title-sub {
+				font-size: 1.25rem;
+				opacity: 0.7;
+				margin-bottom: 28px;
+			}
+
+			.form-control {
+				background: #0f1319 !important;
+				border: 1px solid #2b313c;
+				color: white !important;
+				border-radius: 8px;
+			}
+
+			.form-control:focus {
+				background: #0f1319 !important;
+				color: white !important;
+				border-color: #6f86ff;
+				box-shadow: none;
+			}
+
+			.form-floating label {
+				color: #aab1c3;
+			}
+
+			/* Fix chrome autofill white background */
+
+			input:-webkit-autofill,
+			input:-webkit-autofill:hover,
+			input:-webkit-autofill:focus,
+			textarea:-webkit-autofill,
+			select:-webkit-autofill {
+				-webkit-box-shadow: 0 0 0px 1000px #0f1319 inset !important;
+				box-shadow: 0 0 0px 1000px #0f1319 inset !important;
+				-webkit-text-fill-color: white !important;
+				caret-color: white;
+			}
+
+			.form-floating > .form-control:focus ~ label,
+			.form-floating > .form-control:not(:placeholder-shown) ~ label {
+				color: white;
+				font-weight: bold;
+			}
+
+			.form-floating > .form-control-plaintext ~ label::after,
+			.form-floating > .form-control:focus ~ label::after,
+			.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+			.form-floating > .form-select ~ label::after {
+				background: none;
+			}
+
+			.btn-primary {
+				background: #5c7cff;
+				border: none;
+				border-radius: 8px;
+				font-weight: 500;
+				transition: 0.2s;
+			}
+
+			.btn-primary:hover {
+				background: #4c6cff;
+			}
+
+			.footer {
+				margin-top: 35px;
+				font-size: 0.8rem;
+				opacity: 0.6;
+			}
+			.login-error {
+				color: #ff4d4d;
+				font-size: 0.85rem;
+				margin-bottom: 10px;
+				display: none;
+				text-align: left;
+			}
+
+			.input-error {
+				border-color: #ff4d4d !important;
+				box-shadow: 0 0 0 1px #ff4d4d inset !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="login-card">
+			<img src="https://velconmun.in/velconmun.png" class="logo" />
+
+			<div class="title-main">Velcon MUN 2026</div>
+			<div class="title-sub">Participant Portal</div>
+
+			<form id="loginForm">
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="name" placeholder="Full Name" required />
+					<label>Full Name</label>
+				</div>
+
+				<div class="form-floating mb-3">
+					<input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+					<label>Email Address</label>
+				</div>
+
+				<div class="form-floating mb-2">
+					<input type="password" class="form-control" id="password" placeholder="Password" required />
+					<label>Password</label>
+				</div>
+
+				<div id="loginError" class="login-error"></div>
+
+				<button class="btn btn-primary w-100 py-2" id="loginBtn" type="submit">Sign in</button>
+			</form>
+
+			<div class="footer">© 2026 Velcon Model United Nations</div>
+		</div>
+
+		<script>
+			document.getElementById("loginForm").addEventListener("submit", async function (e) {
+				e.preventDefault();
+
+				const name = document.getElementById("name").value;
+				const email = document.getElementById("email").value;
+				const password = document.getElementById("password");
+				const errorBox = document.getElementById("loginError");
+
+				password.classList.remove("input-error");
+				errorBox.style.display = "none";
+
+				try {
+					const res = await fetch("https://participant.velconmun.in/api/delegate", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({
+							name: name,
+							email: email,
+							password: password.value,
+						}),
+					});
+
+					const data = await res.json();
+
+					if (!res.ok) {
+						errorBox.innerText = data.error || "Incorrect password. Please try again.";
+						errorBox.style.display = "block";
+						password.classList.add("input-error");
+
+						return;
+					}
+
+					window.location.href = `/portal.html?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&password=${encodeURIComponent(password.value)}`;
+				} catch (err) {
+					errorBox.innerText = "Unable to connect to Velcon servers. Please try again later.";
+					errorBox.style.display = "block";
+					password.classList.add("input-error");
+				}
+			});
+		</script>
+	</body>
+</html>
