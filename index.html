@@ -1,709 +1,624 @@
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Velcon MUN 2026</title>
-  <meta name="description" content="Velcon Model United Nations is a two-day youth summit bringing together young leaders for debate, diplomacy, and meaningful dialogue. Scheduled for 16th and 17th May, the conference offers a platform for students to engage with real-world issues through structured discussion and collaboration.">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-<link rel="icon" type="image/jpeg" href="https://velconmun.in/velconsq.jpg">
-  <link href="https://velconmun.in/velconsq.jpg" rel="apple-touch-icon">
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-<style>  
-	
-@media (max-width: 1240px) {
-	.section-title p{
-		font-size: 28px;
-	}
-		.features{
-			padding: 0 2rem!important;}
-		.buttonclass{
-			width: 100%!important}
-		.pwhat{
-			width: 100%!important;
-			padding-left: auto!important;}
-		.joinbutton{
-			display: none!important;}
-  /* container cleanup */
-  .container.col-xxl-8 {
-    padding-top: 0 !important;
-    padding-bottom: 1.5rem !important;
-    max-width: 100% !important;
-  }
-
-  .row.flex-lg-row-reverse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0 !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  /* force full width columns */
-  .col-lg-6,
-  .col-10.col-sm-8.col-lg-6 {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
-  }
-
-  /* title first */
-  h1.display-5 {
-    font-size: 2.6rem !important;
-    margin-top: 0 !important;
-    margin-bottom: 1rem !important;
-    text-align: center !important;
-	  
-  }
-
-  /* logo second */
-  img.img-fluid {
-    width: 70% !important;
-    max-width: 260px !important;
-    height: auto !important;
-    margin: 0.5rem auto 1.5rem auto !important;
-    display: block;
-  }
-
-  /* buttons section */
-  .pwhat {
-    width: 100% !important;
-    padding-top: 0 !important;
-    margin-top: 0.5rem !important;
-    text-align: center !important;
-  }
-
-  .btn-getstarted {
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    margin: 12px auto !important;
-    font-size: 1.1rem !important;
-    padding: 12px 0 !important;
-    border-radius: 6px !important;
-  }
-
-  /* kill inline margins on buttons */
-  .btn-getstarted[style] {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  /* about section */
-  .velcon-about {
-    margin-top: 2rem !important;
-    padding-top: 1rem !important;
-    text-align: center !important;
-  }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    gap: 1.2rem !important;
-  }
-
-  .about-card {
-    padding: 1.4rem !important;
-    border-radius: 12px;
-  }
-
-  .about-card h3 {
-    font-size: 1.7rem;
-	text-align: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .about-card p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .about-card ul {
-    padding-left: 0 !important;
-    list-style: none;
-  }
-
-  .about-card ul li {
-    margin-bottom: 0.4rem;
-    font-size: 0.95rem;
-  }
-
-  .about-footer p {
-    width: 100% !important;
-    font-size: 0.95rem;
-    margin-top: 1rem !important;
-  }
-
-}
- .velcon-about {
-  padding: 3rem 3rem;
-  padding-bottom: 0rem!important;
-  margin-top: 3rem;
-  border-top: 1px solid rgba(255,255,255,0.15);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-}
-
-.about-card {
-  background: rgba(0,0,0,0.6);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 10px;
-  padding: 2rem;
-}
-
-.about-card h3 {
-  color: white;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.about-card p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.85);
-}
-
-.about-card ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.about-card ul li {
-  margin-bottom: 0.8rem;
-  font-size: 1.05rem;
-}
-
-.about-card.highlight {
-  background: linear-gradient(160deg, #B11226, rgba(0,0,0,0.8));
-}
-
-.about-footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.9);
-}
-
-@media (max-width: 1240px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.committees {
-  padding: 2rem 4rem;
-}
-
-.committee-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-@media (min-width: 600px){
-	.committee-item{
-		display: flex;
-	}
-}
-.committee-item {
-  align-items: center;
-  gap: 1.2rem;
-  background: rgba(0,0,0,0.65);
-  border: 1px solid rgba(255,255,255,0.15);
-  padding: 1.5rem;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.committee-item:hover {
-  transform: translateY(-4px);
-  border-color: #B11226;
-}
-
-.committee-item h4 {
-  color: #B11226;
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
-}
-
-.committee-item p {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.85);
-}
-
-.committee-item img {
-  width: 70px;
-  height: 70px;
-}
-
-@media (max-width: 1240px) {
-  .committee-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-h4{
-font-weight: bold;
-}
-	.confb:hover{
-    background-color: color-mix(in srgb, #B11226, transparent 25%);
-    text-decoration: none;
-}
-.features .features-item h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-  color: #B11226;
-  text-transform: uppercase;
-}
-
-.features .features-item i {
-  font-size: 48px;
-  color: #B11226;
-  margin-right: 20px;
-  line-height: 0;
-}
-
-.features .features-item p {
-  font-size: 18px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 0;
-}
-.confb{
-    padding: 10px 30px!important;
-    font-size: 22px!important;
-    border-radius: 6px!important;
-    font-family: var(--heading-font);
-}
-    .text-box {
-      margin-bottom: 3rem;
-      padding: 3.5rem 1rem 2.125rem 1rem;
-      border: 1px solid #cfd7de!important;
-        }
-	.service-item{
-		padding: 10px 20px!important;
-	}
-	.text-body-secondary{
-		color: white!important;
-	}
-  /* PHONE CSS */
-	@media only screen and (max-width: 600px) {
-		.me-2{
-			width: 65%!important;
-		}
-		.velcon-about{
-			padding: 3rem 1rem!important;
-			
-		.col-lg-12{
-			display: block!important;
-		}
-		.info-item{
-			margin-top: 40px!important;
-			margin-left: 0!important;
-		}
-		.services{
-			padding-top: 10!important;
-		}
-		.committee-item {
-			display: block!important;
-		}
-		.order-lg-1{
-			padding-right: calc(var(--bs-gutter-x) * .5)!important;
-		}
-		.section-title h2::after{
-			background: black!important;
-		}
-		.section-title h2{
-			padding-top: 40px!important;
-			padding-bottom: 10px!important;
-		}
-		.pwhat{
-			font-size: 16px!important;
-  			text-align: center!important;
-		}
-	}
-</style>
-
-<link rel="stylesheet" type="text/css" href="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/styles/inject.css"><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/constants.js"></script></head><body class="index-page vsc-domain-veritasgroup-in vsc-initialized" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0" style=""><div id="vsc-constants-loaded" style="display: none;">Constants loaded at 2025-08-15T10:47:08.257Z</div><div id="vsc-test-indicator" style="display: none;"></div><link rel="stylesheet" type="text/css" href="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/styles/inject.css"><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/constants.js"></script><div id="vsc-constants-loaded" style="display: none;">Constants loaded at 2025-08-15T10:47:08.933Z</div><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/logger.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/debug-helper.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/dom-utils.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/event-manager.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/storage-manager.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/settings.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/media-observer.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/mutation-observer.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/action-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/video-controller.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/controls.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/drag-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/shadow-dom.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/base-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/netflix-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/youtube-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/facebook-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/amazon-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/apple-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/index.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/content/inject.js"></script><div id="vsc-constants-loaded" style="display: none;">Constants loaded at 2025-08-15T09:33:47.798Z</div><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/logger.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/debug-helper.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/dom-utils.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/event-manager.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/storage-manager.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/settings.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/media-observer.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/mutation-observer.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/action-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/video-controller.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/controls.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/drag-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/shadow-dom.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/base-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/netflix-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/youtube-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/facebook-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/amazon-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/apple-handler.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/index.js"></script><script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/content/inject.js"></script><div id="vsc-test-indicator" style="display: none;"></div>
-
-
-
-  <header id="header" class="header d-flex align-items-center fixed-top" style="--background-color: black;">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="https://velconmun.in" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Velcon Model UN</h1>
-
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="https://velconmun.in" class="">Home<br></a></li>
-          <li><a href="https://velconmun.in/team" class="">Team</a></li>
-          <li class="dropdown"><a href="#features" class="" style="
-    /* color: #B11226; */
-"><span>Committees &amp; Agendas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-           
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </li></ul></nav>
-
-      <a class="btn-getstarted joinbutton" href="https://forms.gle/YEkVNtMVUCD3rTPGA" style="
-    border: 2px solid red!important;
-">Join Team Velcon</a>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section" style="
-    padding-bottom: 0rem;
-    background-image: linear-gradient(#B11226, black, black, black);
-    padding-top: 4rem;
-">
-<div class="container col-xxl-8 py-5" style="padding-top: 2rem !important;width: 100%; max-width: 1400px!important;/* margin-top: 3rem;  */padding-bottom: 1rem!important;">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5" style="
-    /* padding-right: 2rem!important; */
-    padding-left: 2rem;
-    padding-top: 4rem!important;
-    padding-bottom: 0rem!important;
-">
-<div class="col-lg-6 buttonclass" style="
-    /* width: 65%!important; */
-">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="
-    color: white!important;
-    font-size: 4rem;
-    font-family: 'Raleway';
-    font-weight: bold;
-">Velcon MUN</h1>
-        <p class="col-md-8 fs-4 pwhat" style="max-width: 100%;font-size: 1.1rem!important;/* padding-left: 0px; *//* width: 90%!important; */padding-top: 1rem;"><a class="btn-getstarted confb" href="https://forms.gle/4119tntobM7nxg5p6" style="
-    color: var(--contrast-color);
-    font-size: 30px;
-    padding: 8px 30px;
-    margin: 10px 0 0 0px;
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 2px solid #B11226;
-">Registration Form</a>
-<a class="btn-getstarted confb" href="https://forms.gle/YEkVNtMVUCD3rTPGA" style="
-    color: var(--contrast-color);
-    font-size: 30px;
-    padding: 8px 32px;
-    padding-right: 40px!important;
-    padding-left: 40px!important;
-    margin: 0px 0 0 32px;
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 2px solid #B11226;
-">  ‎ Secretariat Form   ‎</a></p>
-
-        
-      <p class="col-md-8 fs-4 pwhat" style="max-width: 100%;font-size: 1.1rem!important;/* padding-left: 0px; *//* width: 90%!important; */padding-top: 1rem;"><a class="btn-getstarted confb" href="https://docs.google.com/spreadsheets/d/19wYh94Pj9Keybl6y9jLCw4A9eepCxNjnwuqKjBHiJSg/edit?usp=sharing" style="
-    color: var(--contrast-color);
-    font-size: 30px;
-    padding: 8px 30px;
-    /* margin: 0 0 0 30px; */
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 2px solid #B11226;
-">Committee Matrix</a>
-<a class="btn-getstarted confb" href="https://drive.google.com/file/d/1JkH0aUhfFfrxEBdmY5QR2GNwxJrXCb5s/view?usp=sharing" style="
-    color: var(--contrast-color);
-    font-size: 30px;
-    padding: 8px 23px;
-    margin: 0 0 0 30px;
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 2px solid #B11226;
-"> ‎‎   ‎‎ ‎‎   ‎‎  ‎‎‎‎   ‎‎  ‎‎   ‎‎ Brochure   ‎‎   ‎‎  ‎‎ ‎‎ ‎‎   ‎‎  ‎‎ ‎ ‎‎  ‎ </a></p><p class="col-md-8 fs-4 pwhat" style="max-width: 100%;font-size: 1.1rem!important;/* padding-left: 0px; *//* width: 90%!important; */padding-top: 1rem;"><a class="btn-getstarted confb" href="https://www.instagram.com/velcon.mun/" style="
-    color: var(--contrast-color);
-    font-size: 30px;
-    padding: 8px 30px;
-    /* margin: 0 0 0 30px; */
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 2px solid #B11226;
-">‎ ‎ ‎ ‎ ‎ ‎ ‎ Instagram‎ ‎‎  ‎ ‎ ‎ ‎ ‎ </a>
-<a class="btn-getstarted confb" href="https://linktr.ee/velconmun" style="
-    color: var(--contrast-color);
-    font-size: 30px;
-    padding: 8px 30px;
-    padding-right: 40px!important;
-    padding-left: 40px!important;
-    margin: 0 0 0 35px;
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 2px solid #B11226;
-">‎   ‎‎‎   ‎‎ ‎‎  ‎‎ ‎‎  ‎‎  ‎‎  Linktree‎‎   ‎‎ ‎‎   ‎‎  ‎‎  ‎‎  ‎‎  ‎  ‎</a></p></div>
-      <div class="col-10 col-sm-8 col-lg-6" style="
-    width: 100%!important;
-    margin-top: 3px;
-">
-        <img src="https://velconmun.in/velconmun.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500px" height="500px" style="
-    border-radius: 8px;
-">
-      </div>
-
-<div class="velcon-about">
-  <div class="about-grid" style="
-    text-align: left;
-">
-    <div class="about-card">
-      <h3>About Velcon Model United Nations</h3>
-      <p>Velcon Model United Nations 2026 hereby invites applications from interested students and participants to participate in the upcoming edition of the conference scheduled on the 16th and 17th of May 2026. Velcon MUN 2026 aims to provide a dynamic and intellectually rigorous platform that encourages debate diplomacy leadership and a deep understanding of global affairs while upholding the highest standards of professionalism and academic excellence. 
-
- </p>
-      <p>The venue for Velcon Model United Nations 2026 shall be formally notified in due course through official communication channels. All applicants and prospective participants are advised to regularly check for updates and announcements released by the organising committee.</p>
-    </div>
-
-    <div class="about-card highlight">
-      <h3>Conference Details</h3>
-      <ul>
-        <li><strong>Dates:</strong> 16th and 17th May 2026</li>
-        <li><strong>Location:</strong> Faridabad, NCR</li>
-        <li><strong>Format:</strong> Offline Conference</li>
-        <li><strong>Email:</strong> info@velconmun.in</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="about-footer">
-    <p style="
-    width: 80%;
-    margin: auto;
-">
-      From high intensity crisis simulations to policy driven multilateral forums, Velcon MUN 2026 is structured to challenge delegates intellectually and diplomatically. This edition redefines debate through innovation, precision and institutional realism.
-    </p>
-  </div>
-</div>
-
-
-<p></p>
-      
-    </div>
-  </div>
-
-    </section><section id="features" class="features section" data-builder="section" data-colorpreset="cp-dark-background" style="padding: 0 5rem;">
-
-    <div class="container" style="
-    margin-bottom: 8rem;
-">
-  <div class="section-title">
-    <h2 style="padding-top: 10px;">Committees at Velcon MUN 2026</h2>
-    <p>Policy, Crisis and Contemporary Global Challenges</p>
-  </div>
-
-  <div class="committee-list">
-
-    <div class="committee-item">
-      <img src="https://velconmun.in/logos/unga.png">
-      <div>
-        <h4>United Nations General Assembly</h4>
-        <p>Discussion on Improving Frameworks to Address the Global Women's Crisis</p>
-      </div>
-    </div>
-
-    <div class="committee-item">
-      <img src="https://velconmun.in/logos/unep.png">
-      <div>
-        <h4>United Nations Environment Programme</h4>
-        <p>Discussion on the Usage of Artificial Intelligence to Achieve Sustainable Development</p>
-      </div>
-    </div>
-
-    <div class="committee-item">
-      <img src="https://velconmun.in/logos/aippm.png">
-      <div>
-        <h4>All India Political Parties Meet</h4>
-        <p>Discussion on Caste Based Politics with Emphasis on the Reservation Policy of India</p>
-      </div>
-    </div>
-
-    <div class="committee-item">
-      <img src="https://velconmun.in/logos/ipl.png">
-      <div>
-        <h4>Indian Premier League</h4>
-        <p>Mega Auction 2026 (Double Delegation, Team Participation of Two Members)</p>
-      </div>
-    </div>
-
-    <div class="committee-item">
-      <img src="https://velconmun.in/logos/ipc.png">
-      <div>
-        <h4>International Press Corps</h4>
-        <p>Journalism, Caricature and Photography</p>
-      </div>
-    </div>
-
-    <div class="committee-item">
-      <img src="https://velconmun.in/logos/q.png">
-      <div>
-        <h4 style="
-          font-family: 'Cinzel', 'Papyrus', serif;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        ">??????????????????</h4>
-        <p style="
-          letter-spacing: 1px;
-          opacity: 0.85;
-        ">
-          Agenda: CLASSIFIED
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-</section>
-
-<!-- /About Section -->
-
-    <!-- Services Section -->
-<!-- /Services Section -->
-
-
-    <!-- Call To Action Section -->
-    <!-- /Call To Action Section -->
-
-    
-    <!-- Testimonials Section -->
-    <!-- /Testimonials Section -->
-
-    <!-- Team Section -->
-    <!-- /Team Section -->
-
-    <!-- Team Section -->
-    
-
-<!-- Team Section -->
-<!-- /Team Section -->
-    <!-- Team Section -->
-    <!-- /Team Section -->
-
-    <!-- Contact Section -->
-    <!-- /Contact Section -->
-
-  </main>
-
-  <div class="container" style="
-    display: none;
-">
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" style="
-    color: white;
-    text-align: left;
-    padding-bottom: 1rem!important;
-    margin-bottom: 0rem!important;
-">
-    <div class="col mb-3">
-      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-        <img class="bi me-2" width="100" src="https://ikshitsethi01.github.io/veritasgroup/logos/footer.jpg" style="
-    width: 160%;
-    margin-top: -2%;
-">
-      </a>
-      
-    </div>
-
-    <div class="col mb-3">
-
-    </div>
-
-    <div class="col mb-3">
-      <h5>Main Pages</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="https://veritasgroup.in/" class="nav-link p-0 text-body-secondary">Home</a></li>
-        <li class="nav-item mb-2"><a href="https://veritasgroup.in/team" class="nav-link p-0 text-body-secondary">Team</a></li>
-        <li class="nav-item mb-2"><a href="mailto:info@veritasgroup.in" class="nav-link p-0 text-body-secondary">Contact</a></li>
-        <li class="nav-item mb-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd-8vAt3i0yOxPEffk6O7vnpyh3zL6nCbC14UpeLyrN4SUSHw/viewform" class="nav-link p-0 text-body-secondary">Join Team Veritas</a></li>
-        
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5>Conferences</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/veritasch2" class="nav-link p-0 text-body-secondary">Veritas MUN</a></li>
-        <li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/veritasch1" class="nav-link p-0 text-body-secondary">Verizon MUN</a></li><li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/vercian" class="nav-link p-0 text-body-secondary">Vercian MUN</a></li>
-        
-        <li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/vimarsha" class="nav-link p-0 text-body-secondary">Vimarsha MUN</a></li>
-        
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5>Projects</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="kaizen" class="nav-link p-0 text-body-secondary">Kaizen For Change</a></li>
-        
-        
-        
-        
-      <li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/verses" class="nav-link p-0 text-body-secondary">Verses</a></li></ul>
-    </div>
-  </footer>
-</div>
-
-  <!-- Scroll Top -->
-  
-
-  <!-- Preloader -->
-  
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-<script type="text/javascript">
-</script>
-
-
-
-
-
-
-
-
-<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;d37dc3311d84419c8343fa150088be92&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-
-<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;d37dc3311d84419c8343fa150088be92&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-
-</body></html>
+<!-- @format -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Velcon MUN 2026</title>
+		<meta name="description" content="Velcon Model United Nations is a two-day youth summit bringing together young leaders for debate, diplomacy, and meaningful dialogue. Scheduled for 16th and 17th May, the conference offers a platform for students to engage with real-world issues through structured discussion and collaboration." />
+		<meta name="keywords" content="" />
+		<link rel="icon" type="image/jpeg" href="https://velconmun.in/velconsq.jpg" />
+		<link href="https://velconmun.in/velconsq.jpg" rel="apple-touch-icon" />
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com" rel="preconnect" />
+		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+		<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+		<!-- Main CSS File -->
+		<link href="assets/css/main.css" rel="stylesheet" />
+		<style>
+
+			@media (max-width: 1240px) {
+				.section-title p{
+					font-size: 28px;
+				}
+					.features{
+						padding: 0 2rem!important;}
+					.buttonclass{
+						width: 100%!important}
+					.pwhat{
+						width: 100%!important;
+						padding-left: auto!important;}
+					.joinbutton{
+						display: none!important;}
+			  /* container cleanup */
+			  .container.col-xxl-8 {
+			    padding-top: 0 !important;
+			    padding-bottom: 1.5rem !important;
+			    max-width: 100% !important;
+			  }
+
+			  .row.flex-lg-row-reverse {
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    padding-top: 0 !important;
+			    padding-left: 1rem !important;
+			    padding-right: 1rem !important;
+			  }
+
+			  /* force full width columns */
+			  .col-lg-6,
+			  .col-10.col-sm-8.col-lg-6 {
+			    width: 100% !important;
+			    max-width: 100% !important;
+			    text-align: center !important;
+			  }
+
+			  /* title first */
+			  h1.display-5 {
+			    font-size: 2.6rem !important;
+			    margin-top: 0 !important;
+			    margin-bottom: 1rem !important;
+			    text-align: center !important;
+
+			  }
+
+			  /* logo second */
+			  img.img-fluid {
+			    width: 70% !important;
+			    max-width: 260px !important;
+			    height: auto !important;
+			    margin: 0.5rem auto 1.5rem auto !important;
+			    display: block;
+			  }
+
+			  /* buttons section */
+			  .pwhat {
+			    width: 100% !important;
+			    padding-top: 0 !important;
+			    margin-top: 0.5rem !important;
+			    text-align: center !important;
+			  }
+
+			  .btn-getstarted {
+			    display: block;
+			    width: 100%;
+			    max-width: 320px;
+			    margin: 12px auto !important;
+			    font-size: 1.1rem !important;
+			    padding: 12px 0 !important;
+			    border-radius: 6px !important;
+			  }
+
+			  /* kill inline margins on buttons */
+			  .btn-getstarted[style] {
+			    margin-left: auto !important;
+			    margin-right: auto !important;
+			  }
+
+			  /* about section */
+			  .velcon-about {
+			    margin-top: 2rem !important;
+			    padding-top: 1rem !important;
+			    text-align: center !important;
+			  }
+
+			  .about-grid {
+			    display: grid;
+			    grid-template-columns: 1fr !important;
+			    gap: 1.2rem !important;
+			  }
+
+			  .about-card {
+			    padding: 1.4rem !important;
+			    border-radius: 12px;
+			  }
+
+			  .about-card h3 {
+			    font-size: 1.7rem;
+				text-align: center;
+			    margin-bottom: 0.5rem;
+			  }
+
+			  .about-card p {
+			    font-size: 0.95rem;
+			    line-height: 1.5;
+			  }
+
+			  .about-card ul {
+			    padding-left: 0 !important;
+			    list-style: none;
+			  }
+
+			  .about-card ul li {
+			    margin-bottom: 0.4rem;
+			    font-size: 0.95rem;
+			  }
+
+			  .about-footer p {
+			    width: 100% !important;
+			    font-size: 0.95rem;
+			    margin-top: 1rem !important;
+			  }
+
+			}
+			 .velcon-about {
+			  padding: 3rem 3rem;
+			  padding-bottom: 0rem!important;
+			  margin-top: 3rem;
+			  border-top: 1px solid rgba(255,255,255,0.15);
+			}
+
+			.about-grid {
+			  display: grid;
+			  grid-template-columns: 2fr 1fr;
+			  gap: 2rem;
+			}
+
+			.about-card {
+			  background: rgba(0,0,0,0.6);
+			  border: 1px solid rgba(255,255,255,0.15);
+			  border-radius: 10px;
+			  padding: 2rem;
+			}
+
+			.about-card h3 {
+			  color: white;
+			  margin-bottom: 1rem;
+			  font-weight: 700;
+			}
+
+			.about-card p {
+			  font-size: 1.05rem;
+			  line-height: 1.7;
+			  color: rgba(255,255,255,0.85);
+			}
+
+			.about-card ul {
+			  list-style: none;
+			  padding-left: 0;
+			}
+
+			.about-card ul li {
+			  margin-bottom: 0.8rem;
+			  font-size: 1.05rem;
+			}
+
+			.about-card.highlight {
+			  background: linear-gradient(160deg, #B11226, rgba(0,0,0,0.8));
+			}
+
+			.about-footer {
+			  margin-top: 2rem;
+			  text-align: center;
+			  font-size: 1.1rem;
+			  color: rgba(255,255,255,0.9);
+			}
+
+			@media (max-width: 1240px) {
+			  .about-grid {
+			    grid-template-columns: 1fr;
+			  }
+			}
+
+			.committees {
+			  padding: 2rem 4rem;
+			}
+
+			.committee-list {
+			  display: grid;
+			  grid-template-columns: repeat(2, 1fr);
+			  gap: 2rem;
+			}
+
+			@media (min-width: 600px){
+				.committee-item{
+					display: flex;
+				}
+			}
+			.committee-item {
+			  align-items: center;
+			  gap: 1.2rem;
+			  background: rgba(0,0,0,0.65);
+			  border: 1px solid rgba(255,255,255,0.15);
+			  padding: 1.5rem;
+			  border-radius: 10px;
+			  transition: 0.3s;
+			}
+
+			.committee-item:hover {
+			  transform: translateY(-4px);
+			  border-color: #B11226;
+			}
+
+			.committee-item h4 {
+			  color: #B11226;
+			  margin-bottom: 0.4rem;
+			  text-transform: uppercase;
+			}
+
+			.committee-item p {
+			  font-size: 1rem;
+			  color: rgba(255,255,255,0.85);
+			}
+
+			.committee-item img {
+			  width: 70px;
+			  height: 70px;
+			}
+
+			@media (max-width: 1240px) {
+			  .committee-list {
+			    grid-template-columns: 1fr;
+			  }
+			}
+
+
+			h4{
+			font-weight: bold;
+			}
+				.confb:hover{
+			    background-color: color-mix(in srgb, #B11226, transparent 25%);
+			    text-decoration: none;
+			}
+			.features .features-item h4 {
+			  font-size: 20px;
+			  font-weight: 700;
+			  margin: 0 0 5px 0;
+			  color: #B11226;
+			  text-transform: uppercase;
+			}
+
+			.features .features-item i {
+			  font-size: 48px;
+			  color: #B11226;
+			  margin-right: 20px;
+			  line-height: 0;
+			}
+
+			.features .features-item p {
+			  font-size: 18px;
+			  color: color-mix(in srgb, var(--default-color), transparent 20%);
+			  margin: 0;
+			}
+			.confb{
+			    padding: 10px 30px!important;
+			    font-size: 22px!important;
+			    border-radius: 6px!important;
+			    font-family: var(--heading-font);
+			}
+			    .text-box {
+			      margin-bottom: 3rem;
+			      padding: 3.5rem 1rem 2.125rem 1rem;
+			      border: 1px solid #cfd7de!important;
+			        }
+				.service-item{
+					padding: 10px 20px!important;
+				}
+				.text-body-secondary{
+					color: white!important;
+				}
+			  /* PHONE CSS */
+				@media only screen and (max-width: 600px) {
+					.me-2{
+						width: 65%!important;
+					}
+					.velcon-about{
+						padding: 3rem 1rem!important;
+
+					.col-lg-12{
+						display: block!important;
+					}
+					.info-item{
+						margin-top: 40px!important;
+						margin-left: 0!important;
+					}
+					.services{
+						padding-top: 10!important;
+					}
+					.committee-item {
+						display: block!important;
+					}
+					.order-lg-1{
+						padding-right: calc(var(--bs-gutter-x) * .5)!important;
+					}
+					.section-title h2::after{
+						background: black!important;
+					}
+					.section-title h2{
+						padding-top: 40px!important;
+						padding-bottom: 10px!important;
+					}
+					.pwhat{
+						font-size: 16px!important;
+			  			text-align: center!important;
+					}
+				}
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/styles/inject.css" />
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/constants.js"></script>
+	</head>
+	<body class="index-page vsc-domain-veritasgroup-in vsc-initialized" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0" style="">
+		<div id="vsc-constants-loaded" style="display: none">Constants loaded at 2025-08-15T10:47:08.257Z</div>
+		<div id="vsc-test-indicator" style="display: none"></div>
+		<link rel="stylesheet" type="text/css" href="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/styles/inject.css" />
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/constants.js"></script>
+		<div id="vsc-constants-loaded" style="display: none">Constants loaded at 2025-08-15T10:47:08.933Z</div>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/logger.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/debug-helper.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/dom-utils.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/event-manager.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/storage-manager.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/settings.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/media-observer.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/mutation-observer.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/action-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/video-controller.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/controls.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/drag-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/shadow-dom.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/base-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/netflix-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/youtube-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/facebook-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/amazon-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/apple-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/index.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/content/inject.js"></script>
+		<div id="vsc-constants-loaded" style="display: none">Constants loaded at 2025-08-15T09:33:47.798Z</div>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/logger.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/debug-helper.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/dom-utils.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/utils/event-manager.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/storage-manager.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/settings.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/media-observer.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/observers/mutation-observer.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/action-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/core/video-controller.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/controls.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/drag-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/ui/shadow-dom.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/base-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/netflix-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/youtube-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/facebook-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/amazon-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/apple-handler.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/site-handlers/index.js"></script>
+		<script src="chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/src/content/inject.js"></script>
+		<div id="vsc-test-indicator" style="display: none"></div>
+
+		<header id="header" class="header d-flex align-items-center fixed-top" style="--background-color: black">
+			<div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+				<a href="https://velconmun.in" class="logo d-flex align-items-center me-auto me-lg-0">
+					<!-- Uncomment the line below if you also wish to use an image logo -->
+					<!-- <img src="assets/img/logo.png" alt=""> -->
+					<h1 class="sitename">Velcon Model UN</h1>
+				</a>
+
+				<nav id="navmenu" class="navmenu">
+					<ul>
+						<li>
+							<a href="https://velconmun.in" class="">Home<br /></a>
+						</li>
+						<li><a href="https://velconmun.in/team" class="">Team</a></li>
+						<li class="dropdown">
+							<a href="#features" class="" style="/* color: #B11226; */"><span>Committees &amp; Agendas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+							<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+						</li>
+					</ul>
+				</nav>
+
+				<a class="btn-getstarted joinbutton" href="https://forms.gle/YEkVNtMVUCD3rTPGA" style="border: 2px solid red !important">Join Team Velcon</a>
+			</div>
+		</header>
+
+		<main class="main">
+			<!-- Hero Section -->
+			<!-- /Hero Section -->
+
+			<!-- About Section -->
+			<section id="about" class="about section" style="padding-bottom: 0rem; background-image: linear-gradient(#b11226, black, black, black); padding-top: 4rem">
+				<div class="container col-xxl-8 py-5" style="padding-top: 2rem !important; width: 100%; max-width: 1400px !important; /* margin-top: 3rem;  */ padding-bottom: 1rem !important">
+					<div class="row flex-lg-row-reverse align-items-center g-5 py-5" style="/* padding-right: 2rem!important; */ padding-left: 2rem; padding-top: 4rem !important; padding-bottom: 0rem !important">
+						<div class="col-lg-6 buttonclass" style="/* width: 65%!important; */">
+							<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: white !important; font-size: 4rem; font-family: &quot;Raleway&quot;; font-weight: bold">Velcon MUN</h1>
+							<p class="col-md-8 fs-4 pwhat" style="max-width: 100%; font-size: 1.1rem !important; /* padding-left: 0px; */ /* width: 90%!important; */ padding-top: 1rem"><a class="btn-getstarted confb" href="https://forms.gle/4119tntobM7nxg5p6" style="color: var(--contrast-color); font-size: 30px; padding: 8px 30px; margin: 10px 0 0 0px; border-radius: 4px; transition: 0.3s; border: 2px solid #b11226">Registration Form</a> <a class="btn-getstarted confb" href="https://forms.gle/YEkVNtMVUCD3rTPGA" style="color: var(--contrast-color); font-size: 30px; padding: 8px 32px; padding-right: 40px !important; padding-left: 40px !important; margin: 0px 0 0 32px; border-radius: 4px; transition: 0.3s; border: 2px solid #b11226"> ‎ Secretariat Form ‎</a></p>
+
+							<p class="col-md-8 fs-4 pwhat" style="max-width: 100%; font-size: 1.1rem !important; /* padding-left: 0px; */ /* width: 90%!important; */ padding-top: 1rem"><a class="btn-getstarted confb" href="https://docs.google.com/spreadsheets/d/19wYh94Pj9Keybl6y9jLCw4A9eepCxNjnwuqKjBHiJSg/edit?usp=sharing" style="color: var(--contrast-color); font-size: 30px; padding: 8px 30px; /* margin: 0 0 0 30px; */ border-radius: 4px; transition: 0.3s; border: 2px solid #b11226">Committee Matrix</a> <a class="btn-getstarted confb" href="https://drive.google.com/file/d/1JkH0aUhfFfrxEBdmY5QR2GNwxJrXCb5s/view?usp=sharing" style="color: var(--contrast-color); font-size: 30px; padding: 8px 23px; margin: 0 0 0 30px; border-radius: 4px; transition: 0.3s; border: 2px solid #b11226"> ‎‎ ‎‎ ‎‎ ‎‎ ‎‎‎‎ ‎‎ ‎‎ ‎‎ Brochure ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎ ‎‎ ‎ </a></p>
+							<p class="col-md-8 fs-4 pwhat" style="max-width: 100%; font-size: 1.1rem !important; /* padding-left: 0px; */ /* width: 90%!important; */ padding-top: 1rem"><a class="btn-getstarted confb" href="https://www.instagram.com/velcon.mun/" style="color: var(--contrast-color); font-size: 30px; padding: 8px 30px; /* margin: 0 0 0 30px; */ border-radius: 4px; transition: 0.3s; border: 2px solid #b11226">‎ ‎ ‎ ‎ ‎ ‎ ‎ Instagram‎ ‎‎ ‎ ‎ ‎ ‎ ‎ </a> <a class="btn-getstarted confb" href="https://linktr.ee/velconmun" style="color: var(--contrast-color); font-size: 30px; padding: 8px 30px; padding-right: 40px !important; padding-left: 40px !important; margin: 0 0 0 35px; border-radius: 4px; transition: 0.3s; border: 2px solid #b11226">‎ ‎‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ Linktree‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎‎ ‎ ‎</a></p>
+						</div>
+						<div class="col-10 col-sm-8 col-lg-6" style="width: 100% !important; margin-top: 3px">
+							<img src="https://velconmun.in/velconmun.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500px" height="500px" style="border-radius: 8px" />
+						</div>
+
+						<div class="velcon-about">
+							<div class="about-grid" style="text-align: left">
+								<div class="about-card">
+									<h3>About Velcon Model United Nations</h3>
+									<p>Velcon Model United Nations 2026 hereby invites applications from interested students and participants to participate in the upcoming edition of the conference scheduled on the 16th and 17th of May 2026. Velcon MUN 2026 aims to provide a dynamic and intellectually rigorous platform that encourages debate diplomacy leadership and a deep understanding of global affairs while upholding the highest standards of professionalism and academic excellence.</p>
+									<p>The venue for Velcon Model United Nations 2026 shall be formally notified in due course through official communication channels. All applicants and prospective participants are advised to regularly check for updates and announcements released by the organising committee.</p>
+								</div>
+
+								<div class="about-card highlight">
+									<h3>Conference Details</h3>
+									<ul>
+										<li><strong>Dates:</strong> 16th and 17th May 2026</li>
+										<li><strong>Location:</strong> Faridabad, NCR</li>
+										<li><strong>Format:</strong> Offline Conference</li>
+										<li><strong>Email:</strong> info@velconmun.in</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="about-footer">
+								<p style="width: 80%; margin: auto">From high intensity crisis simulations to policy driven multilateral forums, Velcon MUN 2026 is structured to challenge delegates intellectually and diplomatically. This edition redefines debate through innovation, precision and institutional realism.</p>
+							</div>
+						</div>
+
+						<p></p>
+					</div>
+				</div>
+			</section>
+			<section id="features" class="features section" data-builder="section" data-colorpreset="cp-dark-background" style="padding: 0 5rem">
+				<div class="container" style="margin-bottom: 8rem">
+					<div class="section-title">
+						<h2 style="padding-top: 10px">Committees at Velcon MUN 2026</h2>
+						<p>Policy, Crisis and Contemporary Global Challenges</p>
+					</div>
+
+					<div class="committee-list">
+						<div class="committee-item">
+							<img src="https://velconmun.in/logos/unga.png" />
+							<div>
+								<h4>United Nations General Assembly</h4>
+								<p>Discussion on Improving Frameworks to Address the Global Women's Crisis</p>
+							</div>
+						</div>
+
+						<div class="committee-item">
+							<img src="https://velconmun.in/logos/unep.png" />
+							<div>
+								<h4>United Nations Environment Programme</h4>
+								<p>Discussion on the Usage of Artificial Intelligence to Achieve Sustainable Development</p>
+							</div>
+						</div>
+
+						<div class="committee-item">
+							<img src="https://velconmun.in/logos/aippm.png" />
+							<div>
+								<h4>All India Political Parties Meet</h4>
+								<p>Discussion on Caste Based Politics with Emphasis on the Reservation Policy of India</p>
+							</div>
+						</div>
+
+						<div class="committee-item">
+							<img src="https://velconmun.in/logos/ipl.png" />
+							<div>
+								<h4>Indian Premier League</h4>
+								<p>Mega Auction 2026 (Double Delegation, Team Participation of Two Members)</p>
+							</div>
+						</div>
+
+						<div class="committee-item">
+							<img src="https://velconmun.in/logos/ipc.png" />
+							<div>
+								<h4>International Press Corps</h4>
+								<p>Journalism, Caricature and Photography</p>
+							</div>
+						</div>
+
+						<div class="committee-item">
+							<img src="https://velconmun.in/logos/q.png" />
+							<div>
+								<h4 style="font-family: &quot;Cinzel&quot;, &quot;Papyrus&quot;, serif; letter-spacing: 2px; text-transform: uppercase">??????????????????</h4>
+								<p style="letter-spacing: 1px; opacity: 0.85">Agenda: CLASSIFIED</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- /About Section -->
+
+			<!-- Services Section -->
+			<!-- /Services Section -->
+
+			<!-- Call To Action Section -->
+			<!-- /Call To Action Section -->
+
+			<!-- Testimonials Section -->
+			<!-- /Testimonials Section -->
+
+			<!-- Team Section -->
+			<!-- /Team Section -->
+
+			<!-- Team Section -->
+
+			<!-- Team Section -->
+			<!-- /Team Section -->
+			<!-- Team Section -->
+			<!-- /Team Section -->
+
+			<!-- Contact Section -->
+			<!-- /Contact Section -->
+		</main>
+
+		<div class="container" style="display: none">
+			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" style="color: white; text-align: left; padding-bottom: 1rem !important; margin-bottom: 0rem !important">
+				<div class="col mb-3">
+					<a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+						<img class="bi me-2" width="100" src="https://ikshitsethi01.github.io/veritasgroup/logos/footer.jpg" style="width: 160%; margin-top: -2%" />
+					</a>
+				</div>
+
+				<div class="col mb-3"></div>
+
+				<div class="col mb-3">
+					<h5>Main Pages</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/" class="nav-link p-0 text-body-secondary">Home</a></li>
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/team" class="nav-link p-0 text-body-secondary">Team</a></li>
+						<li class="nav-item mb-2"><a href="mailto:info@veritasgroup.in" class="nav-link p-0 text-body-secondary">Contact</a></li>
+						<li class="nav-item mb-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd-8vAt3i0yOxPEffk6O7vnpyh3zL6nCbC14UpeLyrN4SUSHw/viewform" class="nav-link p-0 text-body-secondary">Join Team Veritas</a></li>
+					</ul>
+				</div>
+
+				<div class="col mb-3">
+					<h5>Conferences</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/veritasch2" class="nav-link p-0 text-body-secondary">Veritas MUN</a></li>
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/veritasch1" class="nav-link p-0 text-body-secondary">Verizon MUN</a></li>
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/vercian" class="nav-link p-0 text-body-secondary">Vercian MUN</a></li>
+
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/vimarsha" class="nav-link p-0 text-body-secondary">Vimarsha MUN</a></li>
+					</ul>
+				</div>
+
+				<div class="col mb-3">
+					<h5>Projects</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="kaizen" class="nav-link p-0 text-body-secondary">Kaizen For Change</a></li>
+
+						<li class="nav-item mb-2"><a href="https://veritasgroup.in/conferences/verses" class="nav-link p-0 text-body-secondary">Verses</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Scroll Top -->
+
+		<!-- Preloader -->
+
+		<!-- Vendor JS Files -->
+		<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="../assets/vendor/php-email-form/validate.js"></script>
+		<script src="../assets/vendor/aos/aos.js"></script>
+		<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+		<!-- Main JS File -->
+		<script src="../assets/js/main.js"></script>
+
+		<script type="text/javascript"></script>
+
+		<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"d37dc3311d84419c8343fa150088be92","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+		<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"d37dc3311d84419c8343fa150088be92","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+	</body>
+</html>
